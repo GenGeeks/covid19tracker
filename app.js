@@ -23,7 +23,7 @@ function getInfectedColor(infectedCount){
 }
 
 
-fetch("get-data.json")
+fetch("https://gengeeks.github.io/covid19tracker/get-data.json")
 .then(response => response.json())
 .then(data => {
     //console.log(data);
