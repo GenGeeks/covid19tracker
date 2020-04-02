@@ -1,7 +1,7 @@
 const mapboxToken = "pk.eyJ1IjoiYXNoaXRvc2hwIiwiYSI6ImNpZ3JrczJqNTAyMTJ0N2tuMTIwcjN6bWkifQ.8T0Jk2N7xv1EDlyMzW5dpg";
 
 
-mapboxgl.accessToken = "pk.eyJ1IjoiYXNoaXRvc2hwIiwiYSI6ImNpZ3JrczJqNTAyMTJ0N2tuMTIwcjN6bWkifQ.8T0Jk2N7xv1EDlyMzW5dpg";
+mapboxgl.accessToken = mapboxToken;
 
 var map = new mapboxgl.Map({
 container: 'map',
@@ -23,7 +23,7 @@ function getInfectedColor(infectedCount){
 }
 
 
-fetch("/get-data.json")
+fetch("get-data.json")
 .then(response => response.json())
 .then(data => {
     //console.log(data);
@@ -33,7 +33,7 @@ fetch("/get-data.json")
 
         
     cases.forEach(function (case1) {
-      console.log(case1.name + "," + case1.infected);
+      //console.log(case1.name + "," + case1.infected);
       var dateString = case1.lastUpdated;
       var lastUpdated = new Date(dateString);
       var popup = new mapboxgl.Popup({ 
@@ -53,5 +53,3 @@ fetch("/get-data.json")
 
 
 });
-
-
