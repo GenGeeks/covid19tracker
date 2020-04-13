@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "lockdown-builings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "name": "Sapphire Heights", "lockstartdate": "27th March", "lockenddate": "13th April", "activecases": "2" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 72.876656570976209, 19.19719875045179 ], [ 72.878629802189678, 19.197246878042364 ], [ 72.878226733618632, 19.196176039152128 ], [ 72.876993464110214, 19.196260262435629 ], [ 72.876728762362063, 19.1965309801326 ], [ 72.876656570976209, 19.19719875045179 ] ] ] } },
+{ "type": "Feature", "properties": { "fid": 2, "name": "LFS School", "lockstartdate": "29th March", "lockenddate": "15th April", "activecases": "1" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 72.87464122812105, 19.197908632412744 ], [ 72.876012864452363, 19.197836441026887 ], [ 72.875964736861789, 19.197282973735305 ], [ 72.874665291916344, 19.197234846144731 ], [ 72.87464122812105, 19.197908632412744 ] ] ] } },
+{ "type": "Feature", "properties": { "fid": 4, "name": "Spring Groves", "lockstartdate": "1st April", "lockenddate": "12th April", "activecases": "1" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 72.873910290339225, 19.197081439449786 ], [ 72.874325390807911, 19.197075423500962 ], [ 72.874325390807911, 19.196804705803995 ], [ 72.873904274390412, 19.196786657957528 ], [ 72.873910290339225, 19.197081439449786 ] ] ] } }
+]
+}
