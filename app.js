@@ -68,12 +68,12 @@ function showLockdownAreas(){
         });
         
         // Change the cursor to a pointer when the mouse is over the states layer.
-        map.on('mouseenter', 'states-layer', function() {
+        map.on('mouseenter', 'lockdown', function() {
         map.getCanvas().style.cursor = 'pointer';
         });
         
         // Change it back to a pointer when it leaves.
-        map.on('mouseleave', 'states-layer', function() {
+        map.on('mouseleave', 'lockdown', function() {
         map.getCanvas().style.cursor = '';
         });
 
