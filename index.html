@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Covid-19 geo-Tracker::Genesys</title>
         <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+        <link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css"
+type="text/css"
+/>
         <style>
             body{
                 margin:0;
@@ -13,14 +18,21 @@
                 width: 100vw;
                 height: 100vh;
             }
+            .mapboxgl-popup {
+                max-width: 400px;
+                font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            }
         </style>
 
     </head>
     <body>
-        <div id='map'></div>
+        <div id='map'>
+            <button onclick="showLockdownAreas()">Show Lockdown Areas</button>
+        </div>
         
         <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js"></script>
         <script src="app.js"></script>
-
+        
     </body>
 </html>
