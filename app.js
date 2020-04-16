@@ -62,7 +62,7 @@ function showLockdownAreas(){
         new mapboxgl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(
-          '<strong>' + e.features[0].properties.name + '</strong> <br /> <br /> Total Active Cases: ' + e.features[0].properties.activecases + ' <br /> Lockdown Start Date: ' + e.features[0].properties.lockstartdate + ' <br /> Lockdown End Date: ' + e.features[0].properties.lockenddate
+          '<strong>' + e.features[0].properties.name + '</strong> <br /> <br /> Total Active Cases: ' + e.features[0].properties.activecases + ' <br /> Lockdown Start Date: ' + e.features[0].properties.Lockdown_Start_Date + ' <br /> Lockdown End Date: ' + e.features[0].properties.Lockdown_End_Date
           )
         .addTo(map);
         });
